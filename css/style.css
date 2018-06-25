@@ -1,0 +1,287 @@
+.mainHeading
+{
+	text-align: center;
+	color: #003466;
+}
+
+.mainHeading1
+{
+	text-align: center;
+	color: black;
+}
+
+.heading1
+{
+	margin-top: -5px;
+	font-size: 40px;
+	margin-bottom: -15px;
+}
+
+img
+{
+	width: 100px;
+	height: 100px;
+}
+
+.subh1
+{
+	font-size: 18px;
+}
+
+.head2 p
+{
+	font-size: 18px;
+	margin-top: -15px;
+}
+
+.heading2
+{
+	font-weight: bold;
+	margin-top: -15px;
+	font-size: 20px;
+}
+
+fieldset
+{
+	background-color: #EEEEEE;
+	margin-bottom: 30px;
+	max-width: 1300px;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+#personaldetails
+{
+	margin-left: 80px;
+}
+
+body
+{
+	 background-color: white;
+	 font-size: 18px;
+}
+
+form
+{
+	font-family: 'Cambria', sans-serif;
+}
+
+table
+{
+	margin-bottom: 20px;
+}
+
+input[type = "file"]
+{
+	margin-left: 20px;
+	font-size: 18px;
+  	padding:10px;
+  	background:#C0C0C0;
+  	width: 320px;
+}
+
+input[type = "checkbox"]
+{
+	width: 20px;
+  	height: 20px;
+  	margin-left: 50px;
+  	margin-right: 10px;
+}
+
+.h
+{
+	background-color: #000037;
+	height: 50px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.t
+{
+	background-color: #000037;
+	height: 50px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.sh
+{
+	background-color: #000037;
+	text-align: center;
+}
+
+.shp
+{
+	color: white;
+}
+
+input[type = "submit"]
+{
+	width: 100px;
+	height: 50px;
+	background: #91A4C4;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: sans-serif,Arial;
+	color: black;
+	outline: none;
+	border-radius: 5px;
+	border: 0px;
+	cursor: pointer;
+}
+
+input[type = "submit"]:hover
+{
+	background: #EFC03C;
+}
+
+#tc
+{
+	width: 200px;
+	height: 50px;
+	background: #91A4C4;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: sans-serif,Arial;
+	padding-left: 10px;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	color: black;
+	outline: none;
+	border-radius: 5px;
+	border: 0px;
+	cursor: pointer;	
+}
+
+#tc:hover
+{
+	background: #EFC03C;
+}
+
+.skillDiv
+{
+	float: left;
+}
+
+
+input[type= "text"]
+{
+	margin-left: 20px;
+	width: 1050px;
+}
+
+input[type = "textarea"]
+{
+	width: 1200px;
+	height: 100px;
+}
+
+input,textarea
+{
+	margin-top: 10px;
+	padding: 5px 5px 5px 5px;
+	font-family: 'EB Garamond', serif;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: center;
+}
+
+textarea
+{
+	width: 325px;
+}
+
+.button
+{
+	margin-top: 40px;
+}
+
+.terms
+{
+	font-size: 18px;
+}
+
+#terms
+{
+	display: none;
+	background-color: #EEEEEE;
+	margin-bottom: 30px;
+	max-width: 1300px;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.accept
+{
+	font-size: 18px;
+}
+
+#personaldetails input,textarea
+{
+	width: 420px;
+	margin-left: 100px;
+}
+
+.fr1,.fr2,.fr3,.fr4
+{
+	float: left;
+}
+
+.fr1,.fr2,.fr3,.fr4,.fr5
+{
+	font-size: 18px;
+}
+
+
+label
+{
+	position: relative;
+	margin-top: 80px;
+	top: 12px;
+	font-size: 16px;
+	width: 450px;
+	color: white;
+}
+
+th
+{
+	top: 12px;
+	text-align: left;
+	font-size: 18px;
+}
+
+#previousexperience th
+{
+	text-align: center;
+}
+
+#educationalqualification th
+{
+	text-align: center;
+}
+
+#publications th
+{
+	text-align: center;
+}
+
+.footer
+{
+	margin-top: 60px;
+	position: relative;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+.footer p
+{
+	padding-left: 50px;
+	padding-top: 10px;
+}
