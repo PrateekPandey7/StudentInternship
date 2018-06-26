@@ -42,7 +42,7 @@
 			    case "Bhubaneswar":
 			        $location .= 'BHB'.';';
 			        break;
-			    case "Bangalore":
+			    case "Bengaluru":
 			        $location .= 'BNG'.';';
 			        break;
 			}

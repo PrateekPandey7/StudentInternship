@@ -13,25 +13,37 @@
 .heading1
 {
 	margin-top: -5px;
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: -15px;
+}
+
+.hangingindent 
+{
+  padding-left: 22px ;
+  text-indent: -18px ;
+}
+
+.hangingindent2 
+{
+  padding-left: 22px ;
+  text-indent: -27px ;
+}
+
+.hangingindent1 
+{
+  padding-left: 40px ;
+  text-indent: -80px ;
 }
 
 img
 {
-	width: 100px;
-	height: 100px;
+	width: 60px;
+	height: 60px;
 }
 
 .subh1
 {
 	font-size: 18px;
-}
-
-.head2 p
-{
-	font-size: 18px;
-	margin-top: -15px;
 }
 
 .heading2
@@ -128,6 +140,7 @@ input[type = "submit"]
 	border-radius: 5px;
 	border: 0px;
 	cursor: pointer;
+	box-shadow: 10px 10px;
 }
 
 input[type = "submit"]:hover
@@ -152,7 +165,8 @@ input[type = "submit"]:hover
 	outline: none;
 	border-radius: 5px;
 	border: 0px;
-	cursor: pointer;	
+	cursor: pointer;
+	box-shadow: 10px 10px;	
 }
 
 #tc:hover
@@ -165,8 +179,7 @@ input[type = "submit"]:hover
 	float: left;
 }
 
-
-input[type= "text"]
+.input[type= "text"]
 {
 	margin-left: 20px;
 	width: 1050px;
@@ -178,7 +191,14 @@ input[type = "textarea"]
 	height: 100px;
 }
 
-input,textarea
+select
+{
+	text-align: center;
+	margin-left: 100px;
+	width: 420px;
+}
+
+input,textarea,select
 {
 	margin-top: 10px;
 	padding: 5px 5px 5px 5px;
@@ -217,6 +237,7 @@ textarea
 .accept
 {
 	font-size: 18px;
+	margin-top: -40px;
 }
 
 #personaldetails input,textarea

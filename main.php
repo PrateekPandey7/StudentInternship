@@ -19,10 +19,10 @@ if(isset($_POST["submit"]))
 	else
 	{
 	   $name = clean_text($_POST["name"]);
-	   if(!preg_match("/^[a-zA-Z ]*$/",$name))
-	   {
+	   //if(!preg_match("/^[a-zA-Z ]*$/",$name))
+	   //{
 	     $error = 'Name field not correctly filled.';
-	   }
+	   //}
 	}
 	if(empty($_POST["fname"]))
 	{
@@ -31,10 +31,10 @@ if(isset($_POST["submit"]))
 	else
 	{
 	   $fname = clean_text($_POST["fname"]);
-	   if(!preg_match("/^[a-zA-Z ]*$/",$fname))
-	   {
+	   //if(!preg_match("/^[a-zA-Z ]*$/",$fname))
+	   //{
 	     $error = 'Fathers Name field not correctly filled .';
-	   }
+	   //}
 	}
 	if(empty($_POST["dob"]))
 	{
@@ -99,10 +99,10 @@ if(isset($_POST["submit"]))
 	else
 	{
 	   $email = clean_text($_POST["email"]);
-	   if(!filter_var($email, FILTER_VALIDATE_EMAIL))
-	   {
+	   //if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+	   //{
 	     $error = 'Email field not correctly filled.';
-	   }
+	   //}
 	}
   if(empty($_POST["et11"]) || empty($_POST["et21"]) || empty($_POST["et31"]))
   	{

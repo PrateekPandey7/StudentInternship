@@ -8,12 +8,10 @@ include 'login.php';
 <head>
 	<meta http-equiv = "Content-Type" content = "text.html; charset = UTF-8" />
 	<meta nawm = "viewport" content = "width = device-width, initial-scale = 1.0" />
-	<meta name="google-signin-scope" content="profile email">
-	<meta name="google-signin-client_id" content="595384716245-lbumt0tr5l4455ajgml1ftm99jb4etl7.apps.googleusercontent.com">
 	<title>Login Page</title>
+	<link rel="icon" href="npc.jpg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel = "stylesheet" href="style.css" type = "text/css" />
-	<script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/js-sha512/0.7.1/sha512.js"></script>
 	
 </head>
@@ -45,10 +43,6 @@ include 'login.php';
 			<div>
 				<input type = "submit" name = "login" id = "login" value = "Log in" />
 			</div>
-			<!--<div>
-				<center>OR</center>
-			</div>
-			<div class="g-signin2" data-onsuccess="onSignIn" theme = "dark"></div>-->
 		</form>
 	</section>
 

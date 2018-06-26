@@ -1,6 +1,6 @@
 <?php
 
-    $zipname = 'report.zip';
+    $zipname = 'InternshipReport.zip';
     $zip = new ZipArchive;
     $zip->open($zipname, ZipArchive::CREATE);
     if ($handle = opendir('.')) 

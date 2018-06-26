@@ -49,6 +49,10 @@
 									<td><input type = "date" name = "dob" required></input></td>
 								</tr>
 								<tr>
+									<th>Gender<span style="color:red">  *</span></th>
+									<td><select id = "gender"><option value = "Male">Male</option><option value = "Female">Female</option></select></td>
+								</tr>
+								<tr>
 									<th>Address</th>
 									<td><textarea name = "address" placeholder = "Street Address, Apartment/Building"></textarea></td>
 								</tr>
@@ -82,11 +86,11 @@
 								</tr>
 								<tr>
 									<th>Tentative Start Date for Internship<span style="color:red">  *</span></th>
-									<td><input type = "date" name = "sdate" required></input></td>
+									<td><input type = "date" id = "sdate" name = "sdate" required></input></td>
 								</tr>
 								<tr>
-									<th>Tentativ End Date for Internship<span style="color:red">  *</span></th>
-									<td><input type = "date" name = "edate" required></input></td>
+									<th>Tentative End Date for Internship<span style="color:red">  *</span></th>
+									<td><input type = "date" id = "edate" name = "edate" required></input></td>
 								</tr>
 		            		</table>
 	          		</div>
@@ -100,7 +104,7 @@
 			                  <th>Qualification</th>
 			                  <th width = "4">Year</th>
 			                  <th>Institution</th>
-			                  <th>Marks Obtained(Percentage)</th>
+			                  <th>Marks Obtained(in Percentage)</th>
 			                  <th>Remarks</th>
 			                </thead>
 			                <tbody>
@@ -147,7 +151,7 @@
 		        <fieldset>
 			        <div class = "computer">
 			        	<div class = "h"><label><h3>COMPUTER PROFICIENCY</h3></label></div>
-			        	<div class = "skilldiv"><h3></h3></div><input type = "textarea" id = "skill" name = "computer" placeholder = "Name of Degree/ Diploma/ Certificate & name of Institute"></input>
+			        	<div class = "skilldiv"><h3></h3></div><input type = "textarea" id = "skill" name = "computer" placeholder = "Name of Degree/ Diploma/ Certificate & Name of Institute"></input>
 			        </div>
 		        </fieldset>
 
@@ -250,8 +254,8 @@
 		        
 		        <fieldset>
 			        <div class = "divison">
-			        	<div class = "h"><label><h3>ANY OTHER INFORMATION (Give Details) :</h3></label></div><input type = "textarea" id = "skill" name = "details"></input>
-			        	<div class = "h"><label><h3>SELECT THE DIVISON INTERESTED TO WORK WITH: (Maximum 3) <span style="color:red">  *</span></h3></label></div>
+			        	<div class = "h"><label><h3>ANY OTHER INFORMATION (Give Details)</h3></label></div><input type = "textarea" id = "skill" name = "details"></input>
+			        	<div class = "h"><label><h3>SELECT THE DIVISON INTERESTED TO WORK WITH (Maximum 3) <span style="color:red">  *</span></h3></label></div>
 			        	<div class = "fr1">
 			        		<input type="checkbox" class = "sc" name="check_list[]" value="Agribusiness Division">Agribusiness Division<br/>
 							<input type="checkbox" class = "sc" name="check_list[]" value="Energy Management">Energy Management<br/>
@@ -276,9 +280,9 @@
 			        	<div>
 			        	</br></br>
 			        	</div>
-			        	<div class = "h"><label><h3>SELECT THE LOCATION INTERESTED TO WORK AT: (Maximum 3) <span style="color:red">  *</span></h3></label></div>
+			        	<div class = "h"><label><h3>SELECT THE LOCATION INTERESTED TO WORK AT (Maximum 3) <span style="color:red">  *</span></h3></label></div>
 			        	<div class = "fr1">
-			        		<input type="checkbox" class = "c" name="check_list1[]" value="Bangalore">Bangalore<br/>
+			        		<input type="checkbox" class = "c" name="check_list1[]" value="Bengaluru">Bengaluru<br/>
 			        		<input type="checkbox" class = "c" name="check_list1[]" value="Gandhinagar">Gandhinagar<br/>
 							<input type="checkbox" class = "c" name="check_list1[]" value="Kolkata">Kolkata<br/>
 						</div>
@@ -288,7 +292,7 @@
 							<input type="checkbox" class = "c" name="check_list1[]" value="Mumbai">Mumbai<br/>
 						</div>
 						<div class = "fr3">
-							<input type="checkbox" class = "c" name="check_list1[]" value="Bangalore">Bangalore<br/>
+							<input type="checkbox" class = "c" name="check_list1[]" value="Chandigarh">Chandigarh<br/>
 							<input type="checkbox" class = "c" name="check_list1[]" value="Hyderabad">Hyderabad<br/>
 			        		<input type="checkbox" class = "c" name="check_list1[]" value="Patna">Patna<br/>
 						</div>
@@ -306,29 +310,29 @@
 		    <!--<fieldset>-->
 				<div id = "terms" class = "terms">
 					<div class = "t"><label><h3>TERMS & CONDITIONS</h3></label></div>
-					<p>1. The Applicants fulfilling eligibility criteria may submit their complete details in the prescribed Application Porforma titled at <strong>"Application for Students Internship Program"</strong> that is available on NPC website on or before Apr 30/ Oct 31.</p>
-					<p>2. Any false statement in the application shall be taken extremely seriously and will liable applicant to rejection and legal action.</p>
-					<p>3. The Application recieved online shall be treated as signed application by the applicant.</p>
-					<p>4. No documents need to be attached to the application. Documents shall be verified at the time of interview, if require.</p>
-					<p>5. National Productivity Council (NPC) invites application for internship in the Department from the young graduates/ post graduates to work as interns.</p>
-					<p>6. This is <strong>NOT</strong> an offer for employment in NPC and is solely directed towards providing exposure to young and motivated students to gain an understanding of formal work environment, working of government and exposure to the industrial scenario in India.</p>
-					<p>7. The internship <strong>DOES NOT</strong> confirm any right to the interns to any position or job in NPC or any other wing of the Government on any preference in employment after the internship or anytime in future.</p>
-					<p>8. NPC reserves its right <strong>NOT TO ENGAGE</strong> any intern in response to the advertisement and this is only an invitation to young men and women to apply for internship. NPC shall not be liable for any action taken by any person in response to this advertisement.</p>
-					<p>9. All the applications shall be screened for qualification and completeness. Complete applications shall be sorted and shortlisted for calling suitable candidates for interview. <strong>Not all applicants will be called for interview</strong>.</p>
-					<p>10. The intern shall be attached to an office or officer and will be expected to learn how functions of such office/officer are discharged. They are expected to have good observation, motivation to learn and acumen to suggest solutions to problems posed to the office/officer.</p>
-					<p>11. Interns shall during their internship (even outside office) be expected to maintain highest standards of behavior and show politeness in dealings with members of public.</p>
-					<p>12. Selection of the candidates shall be made on the basis of interviews taken by a selection committee. Only short listed candidates shall be invited for the interview.</p>
-					<p>13. The applicants are advised to provide e-mail address for communication of interview call and selection & no communication will be made by post, the candidates are advised to regularly check the provided email as well as NPC website.</p>
-					<p>14. The period of internship shall be as per the course requirement of the institute.</p>
-					<p>15. <strong>No stipend or remuneration will be paid in the internship period.</strong>
-					<p>16. On requests from the group of interns, the special training sessions on Report Writing Skills, Leadership & Team Work, Office Communication and MS Office Application can be conducted on nominal charge basis collected directlt from the students.</p>
-					<p>17. All students will carry their own laptops to undertake the assigned tasks whereas other facilities like internet, printing etc will be provided by NPC.</p>
-					<p>18. Interns shall be discharged on completion of their term. NPC shall provide a <strong>'Certificate of Internship'</strong> on completion.</p> 
+					<p class = "hangingindent">1. The Applicants fulfilling eligibility criteria may submit their complete details in the prescribed Application Porforma titled at <strong>"Application Proforma for Students Internship Program"</strong> on or before Apr 30/ Oct 31, that is available on NPC website.</p>
+					<p class = "hangingindent">2. Any false statement in the application shall be taken extremely seriously and will liable applicant to rejection and legal action.</p>
+					<p class = "hangingindent">3. The Application recieved online shall be treated as signed application by the applicant.</p>
+					<p class = "hangingindent">4. No documents need to be attached to the application. Documents shall be verified at the time of interview, if require.</p>
+					<p class = "hangingindent">5. National Productivity Council (NPC) invites application for internship in the Department from the young graduates/ post graduates to work as interns.</p>
+					<p class = "hangingindent">6. This is <strong>NOT</strong> an offer for employment in NPC and is solely directed towards providing exposure to young and motivated students to gain an understanding of formal work environment, working of government and exposure to the industrial scenario in India.</p>
+					<p class = "hangingindent">7. The internship <strong>DOES NOT</strong> confirm any right to the interns to any position or job in NPC or any other wing of the Government on any preference in employment after the internship or anytime in future.</p>
+					<p class = "hangingindent">8. NPC reserves its right <strong>NOT TO ENGAGE</strong> any intern in response to the advertisement and this is only an invitation to young men and women to apply for internship. NPC shall not be liable for any action taken by any person in response to this advertisement.</p>
+					<p class = "hangingindent">9. All the applications shall be screened for qualification and completeness. Complete applications shall be sorted and shortlisted for calling suitable candidates for interview. <strong>Not all applicants will be called for interview</strong>.</p>
+					<p class = "hangingindent2">10. The intern shall be attached to an office or officer and will be expected to learn how functions of such office/officer are discharged. They are expected to have good observation, motivation to learn and acumen to suggest solutions to problems posed to the office/officer.</p>
+					<p class = "hangingindent2">11. Interns shall during their internship (even outside office) be expected to maintain highest standards of behavior and show politeness in dealings with members of public.</p>
+					<p class = "hangingindent2">12. Selection of the candidates shall be made on the basis of interviews taken by a selection committee. Only short listed candidates shall be invited for the interview.</p>
+					<p class = "hangingindent2">13. The applicants are advised to provide e-mail address for communication of interview call and selection & no communication will be made by post, the candidates are advised to regularly check the provided email as well as NPC website.</p>
+					<p class = "hangingindent2">14. The period of internship shall be as per the course requirement of the institute.</p>
+					<p class = "hangingindent2">15. <strong>No stipend or remuneration will be paid in the internship period.</strong>
+					<p class = "hangingindent2">16. On requests from the group of interns, the special training sessions on Report Writing Skills, Leadership & Team Work, Office Communication and MS Office Application can be conducted on nominal charge basis collected directlt from the students.</p>
+					<p class = "hangingindent2">17. All students will carry their own laptops to undertake the assigned tasks whereas other facilities like internet, printing etc will be provided by NPC.</p>
+					<p class = "hangingindent2">18. Interns shall be discharged on completion of their term. NPC shall provide a <strong>'Certificate of Internship'</strong> on completion.</p> 
 
 					<div class = "accept">
 						</br>
 						</br>
-						<input type="checkbox" name="accept" value="accept" required> I <span id="myname"></span> son/daughter of <span id="myfname"></span> hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.<br>
+						<p class = "hangingindent1"><input type="checkbox" name="accept" value="accept" required> I <span id="myname"></span> <span id ="mygender"></span> of <span id="myfname"></span> hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.</p><br>
 						Date: &nbsp;&nbsp;&nbsp; <input type = "date" name = "date" required></input>
 						</br>
 						Place: &nbsp;&nbsp;&nbsp; <input name = "place" required></input>
@@ -350,7 +354,6 @@
 	<script>
 	function myname(val)
 	{ 
-
     	document.getElementById("myname").innerHTML = val; 
     }
 
@@ -359,6 +362,14 @@
 
     	document.getElementById("myfname").innerHTML = val; 
     }
+
+    function mygender(val)
+    {
+    	if(val == 'Male' || val == 'male')
+    		document.getElementById("mygender").innerHTML = 'son';
+    	if(val == 'Female' || val == 'female')
+    		document.getElementById("mygender").innerHTML = "daughter";
+    }
     </script>
 	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
@@ -366,23 +377,29 @@
 		{
     		$("#tc").click(function()
 			{
-
 				var cnt = $("input[name='check_list[]']:checked").length;
 				var cnt1 = $("input[name='check_list1[]']:checked").length;
+				var sd = document.getElementById("sdate").value;
+    			var ed = document.getElementById("edate").value;
 				var limit = 1;
 	        	if (cnt < 1) 
 	        	{
 	            	$(this).prop("checked", "");
-	            	alert('You need atleast ' + limit + ' Division');
+	            	alert('You need to select atleast ' + limit + ' Division to work with');
 	        	}
 	        	else if(cnt1 < 1)
 	        	{
 	        		$(this).prop("checked", "");
-	            	alert('You need atleast ' + limit + ' Location');
+	            	alert('You need to select atleast ' + limit + ' Location to work at');
+	        	}
+	        	else if(new Date(sd).getTime() > new Date(ed).getTime())
+	        	{
+	        		alert('Starting date for internship cannot be after the End date');
 	        	}
 	        	else
 	        	{
 	        		$(".terms").show();
+	        		mygender( document.getElementById("gender").value);
 		   			$("#tc").hide();
 	        	}		
 			});
