@@ -332,9 +332,6 @@
 					<div class = "accept">
 						</br>
 						</br>
-						<p class = "hangingindent1"><input type="checkbox" name="accept" value="accept" required> I <span id="myname"></span> <span id ="mygender"></span> of <span id="myfname"></span> hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.</p><br>
-						Date: &nbsp;&nbsp;&nbsp; <input type = "date" name = "date" required></input>
-						</br>
 						Place: &nbsp;&nbsp;&nbsp; <input name = "place" required></input>
 						<div class = "form-group button">
 		            		<center><input type="submit" id = "submit" class = "btn btn-primary" name = "submit" value = "Submit"></center>

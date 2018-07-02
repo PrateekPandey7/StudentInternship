@@ -161,10 +161,7 @@ if(isset($_POST["submit"]))
       $computer = clean_text($_POST["computer"]);
     }
 
-    if(!empty($_POST["date"]))
-    {
-      $date = clean_text($_POST["date"]);
-    }
+    $date = date("Y/m/d"); 
 
     if(!empty($_POST["place"]))
     {

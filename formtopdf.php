@@ -412,7 +412,7 @@ $pdf->Ln(10);
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,50,'Date :');
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$_POST["date"]);
+$pdf->Cell(100,50,$date);
 $pdf->Ln(10);
 
 
