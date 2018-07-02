@@ -50,7 +50,7 @@
 								</tr>
 								<tr>
 									<th>Gender<span style="color:red">  *</span></th>
-									<td><select id = "gender"><option value = "Male">Male</option><option value = "Female">Female</option></select></td>
+									<td><select id = "gender"><option value = "Male">Male</option><option value = "Female">Female</option><option value = "Others">Others</option></select></td>
 								</tr>
 								<tr>
 									<th>Address</th>
@@ -369,6 +369,8 @@
     		document.getElementById("mygender").innerHTML = 'son';
     	if(val == 'Female' || val == 'female')
     		document.getElementById("mygender").innerHTML = "daughter";
+    	if(val == 'Others')
+    		document.getElementById("mygender").innerHTML = "son/daughter";
     }
     </script>
 	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
