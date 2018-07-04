@@ -2,7 +2,7 @@
 
 $error = '';
 $name = '';$fname = '';$dob = '';$address = '';$city = '';$state = '';$pincode = '';$contact = '';$email = '';$mobile = '';$heducation = '';$education1 = '';$education2 = '';$education3 = '';$education4 = '';$education5 = '';$experience1 = '';$experience2 = '';$experience3 = '';$experience4 = '';$experience5 = '';$publications1 = '';
-$publications2 = '';$publications3 = '';$computer = '';$date = '';$place = '';$division = '';$location = '';$sdate = '';$edate = '';$skills = '';$totalexperience = '';$details = '';
+$publications2 = '';$publications3 = '';$computer = '';$date = '';$place = '';$division = '';$location = '';$sdate = '';$edate = '';$skills = '';$totalexperience = '';$details = '';$nationality = '';
 function clean_text($string)
 {
   $string = trim($string);
@@ -177,6 +177,10 @@ if(isset($_POST["submit"]))
     {
       $edate = clean_text($_POST["edate"]);
     }
+    if(!empty($_POST["nationality"]))
+    {
+      $nationality = clean_text($_POST["nationality"]);
+    }
 
 
 
@@ -198,14 +202,15 @@ if(isset($_POST["submit"]))
 	if($error == '' && $flag == 0)
 	{
     
-		$file_open = fopen("ApplicationProforma.csv", "a");
+		$file_open = fopen("Internship.csv", "a");
 		$file_open1 = fopen("Report.csv","a");
 		$no_rows1 = count(file("Report.csv"));
-    $no_rows = count(file("ApplicationProforma.csv"));
+    $no_rows = count(file("Internship.csv"));
 		$form_data = array(
 			'sr_no' => $no_rows1,
 			'name' => $name,
 			'fname' => $fname,
+      'nationality' => $nationality,
 			'dob' => $dob,
 			'address' => $address,
 			'city' => $city,

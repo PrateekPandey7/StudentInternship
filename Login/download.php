@@ -31,7 +31,7 @@
 				</div>
 				<div class="wrapper">
   					<span class="square individual">
-    				<a class = "link" href="../ApplicationProforma.csv" target = '_blank'>Download Excel File</a>
+    				<a class = "link" href="../Internship.csv" target = '_blank'>Download Excel File</a>
   					</span>
 				</div>
 				<div class="wrapper">

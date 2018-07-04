@@ -22,7 +22,7 @@
 			<p class = "heading1"><strong>National Productivity Council</strong><p>
 			<p class = "subh1">(Under Department of Industrial Policy & Promotion Ministry of Commerce & Industry, Govt. of India)</p>
 			<strong><p class = "heading2">APPLICATION PROFORMA FOR STUDENTS INTERNSHIP PROGRAMME</p></strong>
-			
+			<p>No. HQ/HRM/S02/2017-18</p>
 		</div>
 
 		<?php echo $error ?>
@@ -43,6 +43,10 @@
 								<tr>
 									<th>Father's Name<span style="color:red">  *</span></th>
 									<td><input id = "fname" name = "fname" onkeyup="myfname(this.value)" required></input></td>
+								</tr>
+								<tr>
+									<th>Nationality<span style="color:red">  *</span></th>
+									<td><input id = "nationality" name = "nationality" required></input></td>
 								</tr>
 								<tr>
 									<th>Date of Birth<span style="color:red">  *</span></th>
@@ -310,28 +314,28 @@
 		    <!--<fieldset>-->
 				<div id = "terms" class = "terms">
 					<div class = "t"><label><h3>TERMS & CONDITIONS</h3></label></div>
-					<p class = "hangingindent">1. The Applicants fulfilling eligibility criteria may submit their complete details in the prescribed Application Porforma titled at <strong>"Application Proforma for Students Internship Program"</strong> on or before Apr 30/ Oct 31, that is available on NPC website.</p>
+					<p class = "hangingindent">1. The Applicants fulfilling eligibility criteria may submit their complete details in the prescribed Online Application Proforma titled as <strong>"Application Proforma for Students Internship Program"</strong> on or before Apr 30/ Oct 31, that is available on NPC website.</p>
 					<p class = "hangingindent">2. Any false statement in the application shall be taken extremely seriously and will liable applicant to rejection and legal action.</p>
-					<p class = "hangingindent">3. The Application recieved online shall be treated as signed application by the applicant.</p>
-					<p class = "hangingindent">4. No documents need to be attached to the application. Documents shall be verified at the time of interview, if require.</p>
-					<p class = "hangingindent">5. National Productivity Council (NPC) invites application for internship in the Department from the young graduates/ post graduates to work as interns.</p>
-					<p class = "hangingindent">6. This is <strong>NOT</strong> an offer for employment in NPC and is solely directed towards providing exposure to young and motivated students to gain an understanding of formal work environment, working of government and exposure to the industrial scenario in India.</p>
-					<p class = "hangingindent">7. The internship <strong>DOES NOT</strong> confirm any right to the interns to any position or job in NPC or any other wing of the Government on any preference in employment after the internship or anytime in future.</p>
-					<p class = "hangingindent">8. NPC reserves its right <strong>NOT TO ENGAGE</strong> any intern in response to the advertisement and this is only an invitation to young men and women to apply for internship. NPC shall not be liable for any action taken by any person in response to this advertisement.</p>
-					<p class = "hangingindent">9. All the applications shall be screened for qualification and completeness. Complete applications shall be sorted and shortlisted for calling suitable candidates for interview. <strong>Not all applicants will be called for interview</strong>.</p>
-					<p class = "hangingindent2">10. The intern shall be attached to an office or officer and will be expected to learn how functions of such office/officer are discharged. They are expected to have good observation, motivation to learn and acumen to suggest solutions to problems posed to the office/officer.</p>
-					<p class = "hangingindent2">11. Interns shall during their internship (even outside office) be expected to maintain highest standards of behavior and show politeness in dealings with members of public.</p>
-					<p class = "hangingindent2">12. Selection of the candidates shall be made on the basis of interviews taken by a selection committee. Only short listed candidates shall be invited for the interview.</p>
-					<p class = "hangingindent2">13. The applicants are advised to provide e-mail address for communication of interview call and selection & no communication will be made by post, the candidates are advised to regularly check the provided email as well as NPC website.</p>
-					<p class = "hangingindent2">14. The period of internship shall be as per the course requirement of the institute.</p>
-					<p class = "hangingindent2">15. <strong>No stipend or remuneration will be paid in the internship period.</strong>
-					<p class = "hangingindent2">16. On requests from the group of interns, the special training sessions on Report Writing Skills, Leadership & Team Work, Office Communication and MS Office Application can be conducted on nominal charge basis collected directlt from the students.</p>
-					<p class = "hangingindent2">17. All students will carry their own laptops to undertake the assigned tasks whereas other facilities like internet, printing etc will be provided by NPC.</p>
-					<p class = "hangingindent2">18. Interns shall be discharged on completion of their term. NPC shall provide a <strong>'Certificate of Internship'</strong> on completion.</p> 
+					<p class = "hangingindent">3. No documents need to be attached to the application. Documents shall be verified at the time of interview, if require.</p>
+					<p class = "hangingindent">4. National Productivity Council (NPC) invites application for internship in the Department from the young graduates/ post graduates to work as interns.</p>
+					<p class = "hangingindent">5. This is <strong>NOT</strong> an offer for employment in NPC and is solely directed towards providing exposure to young and motivated students to gain an understanding of formal work environment, working of government and exposure to the industrial scenario in India.</p>
+					<p class = "hangingindent">6. The internship <strong>DOES NOT</strong> confirm any right to the interns to any position or job in NPC or any other wing of the Government on any preference in employment after the internship or anytime in future.</p>
+					<p class = "hangingindent">7. NPC reserves its right <strong>NOT TO ENGAGE</strong> any intern in response to the advertisement and this is only an invitation to young men and women to apply for internship. NPC shall not be liable for any action taken by any person in response to this advertisement.</p>
+					<p class = "hangingindent">8. All the applications shall be screened for qualification and completeness. Complete applications shall be sorted and shortlisted for calling suitable candidates for interview. <strong>Not all applicants will be called for interview</strong>.</p>
+					<p class = "hangingindent">9. The intern shall be attached to an office or officer and will be expected to learn how functions of such office/officer are discharged. They are expected to have good observation, motivation to learn and acumen to suggest solutions to problems posed to the office/officer.</p>
+					<p class = "hangingindent2">10. Interns shall during their internship (even outside office) be expected to maintain highest standards of behavior and show politeness in dealings with members of public.</p>
+					<p class = "hangingindent2">11. Selection of the candidates shall be made on the basis of interviews taken by a selection committee. Only short listed candidates shall be invited for the interview.</p>
+					<p class = "hangingindent2">12. The applicants are advised to provide e-mail address for communication of interview call and selection & no communication will be made by post, the candidates are advised to regularly check the provided email as well as NPC website.</p>
+					<p class = "hangingindent2">13. The period of internship shall be as per the course requirement of the institute.</p>
+					<p class = "hangingindent2">14. <strong>No stipend or remuneration will be paid in the internship period.</strong>
+					<p class = "hangingindent2">15. On requests from the group of interns, the special training sessions on Report Writing Skills, Leadership & Team Work, Office Communication and MS Office Application can be conducted on nominal charge basis collected directlt from the students.</p>
+					<p class = "hangingindent2">16. All students will carry their own laptops to undertake the assigned tasks whereas other facilities like internet, printing etc will be provided by NPC.</p>
+					<p class = "hangingindent2">17. Interns shall be discharged on completion of their term. NPC shall provide a <strong>'Certificate of Internship'</strong> on completion.</p> 
 
 					<div class = "accept">
 						</br>
 						</br>
+						<p class = "hangingindent1"><input type="checkbox" name="accept" value="accept" required>I <span id="myname"></span> <span id ="mygender"></span> of <span id="myfname"></span> hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.<br></p>
 						Place: &nbsp;&nbsp;&nbsp; <input name = "place" required></input>
 						<div class = "form-group button">
 		            		<center><input type="submit" id = "submit" class = "btn btn-primary" name = "submit" value = "Submit"></center>

@@ -36,6 +36,13 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$_POST['fname']);
 $pdf->Ln(10);
 
+//Nationality
+$pdf->SetFont('Arial','B',14);
+$pdf->Cell(50,50,'Nationality :');
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(100,50,$_POST['nationality']);
+$pdf->Ln(10);
+
 //DOB
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,50,'Date of Birth :');
