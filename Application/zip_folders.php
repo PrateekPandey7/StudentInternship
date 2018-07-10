@@ -7,7 +7,6 @@
     {
       while (false !== ($entry = readdir($handle))) 
       {
-        echo "hi";
         if ($entry != "." && $entry != ".." && strstr($entry, '.pdf')) //!strstr($entry,'.php') && !strstr($entry,'.zip')) 
         {
             $zip->addFile($entry);

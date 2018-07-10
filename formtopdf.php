@@ -16,7 +16,7 @@ class PDF extends FPDF
 
 $pdf = new PDF('P','mm',array(300,300));
 $pdf->AddPage();
-$name = "uploads/".$_POST["name"].'('.$_POST["dob"].')'."(Photo).jpg";
+$name = "uploads/".$_POST["name"].'('.$_POST["dob"].')'."(Photo).".$imageFileType;
 
 //Photo
 $pdf->Image($name,250,30,30);
@@ -213,6 +213,7 @@ $pdf->MultiCell(200,7,$_POST['computer'],0,'L',false);
 $pdf->Ln(20);
 
 
+$pdf->AddPage();
 //Experience
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,50,'Experience :');
@@ -392,10 +393,7 @@ $pdf->Ln(20);
 
 //Division
 $string = '';
-foreach($_POST['check_list'] as $selected)
-{
-	$string .= $selected." / ";
-}
+$string = $div1 . '/' . $div2 . '/' . $div3;
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,50,'Division :');
 $pdf->SetFont('Arial','',10);
@@ -405,10 +403,7 @@ $pdf->Ln(10);
 
 //Location
 $string = '';
-foreach($_POST['check_list1'] as $selected)
-{
-	$string .= $selected." / ";
-}
+$string = $loc1 . '/' . $loc2 . '/' . $loc3;
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,50,'Location :');
 $pdf->SetFont('Arial','',10);

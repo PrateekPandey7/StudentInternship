@@ -1,8 +1,9 @@
 <?php
 
-	if(!empty($_POST['check_list1']))
+	$check_list = array($loc1,$loc2,$loc3);
+	if(!empty($check_list))
   	{
-		foreach($_POST['check_list1'] as $selected)
+		foreach($check_list as $selected)
 		{
 			switch ($selected) 
 			{

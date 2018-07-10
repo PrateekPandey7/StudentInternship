@@ -1,8 +1,9 @@
 <?php
 
-	if(!empty($_POST['check_list']))
+	$check_list = array($div1,$div2,$div3);
+	if(!empty($check_list))
   	{
-		foreach($_POST['check_list'] as $selected)
+		foreach($check_list as $selected)
 		{
 			switch ($selected) 
 			{
@@ -36,7 +37,7 @@
 			    case "Finance Division":
 			        $division .= 'FN'.';';
 			        break;
-			    case "Employee Development & Legal Cell":
+			    case "Employee Development and Legal Cell":
 			        $division .= 'ED'.';';
 			        break;
 			}

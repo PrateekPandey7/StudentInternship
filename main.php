@@ -1,8 +1,8 @@
 <?php
 
 $error = '';
-$name = '';$fname = '';$dob = '';$address = '';$city = '';$state = '';$pincode = '';$contact = '';$email = '';$mobile = '';$heducation = '';$education1 = '';$education2 = '';$education3 = '';$education4 = '';$education5 = '';$experience1 = '';$experience2 = '';$experience3 = '';$experience4 = '';$experience5 = '';$publications1 = '';
-$publications2 = '';$publications3 = '';$computer = '';$date = '';$place = '';$division = '';$location = '';$sdate = '';$edate = '';$skills = '';$totalexperience = '';$details = '';$nationality = '';
+$name = '';$fname = '';$dob = '';$address = '';$city = '';$state = '';$pincode = '';$contact = '';$email = '';$mobile = '';$heducation = '';$education1 = '';$education2 = '';$education3 = '';$education4 = '';$education5 = '';$experience1 = '';$experience2 = '';$experience3 = '';$experience4 = '';$experience5 = '';$publications1 = '';$gender = '';
+$publications2 = '';$publications3 = '';$computer = '';$date = '';$place = '';$division = '';$location = '';$sdate = '';$edate = '';$skills = '';$totalexperience = '';$details = '';$nationality = '';$div1 = '';$div2 = '';$div3 = '';$loc1 = '';$loc2 = '';$loc3 = '';
 function clean_text($string)
 {
   $string = trim($string);
@@ -173,6 +173,7 @@ if(isset($_POST["submit"]))
       $sdate = clean_text($_POST["sdate"]);
     }
 
+
     if(!empty($_POST["edate"]))
     {
       $edate = clean_text($_POST["edate"]);
@@ -182,6 +183,36 @@ if(isset($_POST["submit"]))
       $nationality = clean_text($_POST["nationality"]);
     }
 
+    if(!empty($_POST["div1"]))
+    {
+      $div1 = clean_text($_POST["div1"]);
+    }
+    if(!empty($_POST["div2"]))
+    {
+      $div2 = clean_text($_POST["div2"]);
+    }
+    if(!empty($_POST["div3"]))
+    {
+      $div3 = clean_text($_POST["div3"]);
+    }
+
+    if(!empty($_POST["loc1"]))
+    {
+      $loc1 = clean_text($_POST["loc1"]);
+    }
+    if(!empty($_POST["loc2"]))
+    {
+      $loc2 = clean_text($_POST["loc2"]);
+    }
+    if(!empty($_POST["loc3"]))
+    {
+      $loc3 = clean_text($_POST["loc3"]);
+    }
+
+    if(!empty($_POST["gender"]))
+    {
+      $gender = clean_text($_POST["gender"]);
+    }
 
 
   	include 'personalexperience.php';
@@ -212,6 +243,7 @@ if(isset($_POST["submit"]))
 			'fname' => $fname,
       'nationality' => $nationality,
 			'dob' => $dob,
+      'gender' => $gender,
 			'address' => $address,
 			'city' => $city,
 			'state' => $state,
