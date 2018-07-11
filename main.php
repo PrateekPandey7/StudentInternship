@@ -259,8 +259,10 @@ if(isset($_POST["submit"]))
 			'totalexperience' => $totalexperience,
 			'publications' => $publications1,
       'details' => $details,
-			'division' => $division,
-			'location' => $location,
+			'division' => $div1,
+      'division2' => $div2.'/'.$div3,
+      'location' => $loc1,
+      'location2' => $loc2.'/'.$loc3,
       'date' => $date,
       'place' => $place,
 			);
