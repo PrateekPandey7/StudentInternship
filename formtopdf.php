@@ -13,7 +13,7 @@ $pdf->Cell(300,5,'APPLICATION PROFORMA',0,2,'C');
 $pdf->Ln(3);
 $pdf->Cell(300,5,'FOR',0,2,'C');
 $pdf->Ln(3);
-$pdf->Cell(300,5,'Empanelment of Consultants, Experts and Trainers',0,1,'C');
+$pdf->Cell(300,5,'Student Internship Programme',0,1,'C');
 $name = "uploads/".$_POST["name"].'('.$_POST["dob"].')'."(Photo).".$imageFileType;
 
 $pdf->Ln(20);
@@ -530,7 +530,7 @@ $pdf->Ln(40);
 $pdf->Cell(100,10,'Terms and Conditions as specified in the Online Application Proforma/ related notification on NPC website');
 $pdf->Ln(15);
 $pdf->SetFont('Arial','',12);
-$pdf->MultiCell(270,7,"I hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to those terms and conditions.",0,'L',false);
+$pdf->MultiCell(270,7,"I hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.",0,'L',false);
 //Place
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,10,'Place :');
