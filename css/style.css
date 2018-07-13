@@ -35,17 +35,6 @@
   text-indent: -80px ;
 }
 
-.divisiondetails
-{
-	margin-left: 80px;
-	margin-bottom: -30px;
-}
-
-.locationdetails
-{
-	margin-left: 80px;
-}
-
 img
 {
 	width: 60px;
@@ -55,6 +44,12 @@ img
 .subh1
 {
 	font-size: 18px;
+}
+
+.head2 p
+{
+	font-size: 18px;
+	margin-top: -15px;
 }
 
 .heading2
@@ -79,6 +74,17 @@ fieldset
 	margin-left: 80px;
 }
 
+.divisiondetails
+{
+	margin-left: 80px;
+	margin-bottom: -30px;
+}
+
+.locationdetails
+{
+	margin-left: 80px;
+}
+
 body
 {
 	 background-color: white;
@@ -90,7 +96,7 @@ form
 	font-family: 'Cambria', sans-serif;
 }
 
-table
+#personaldetails
 {
 	margin-bottom: 20px;
 }
@@ -161,6 +167,7 @@ input[type = "submit"]
 	border: 0px;
 	cursor: pointer;
 	box-shadow: 10px 10px;
+	text-align: center;
 }
 
 input[type = "submit"]:hover
@@ -199,7 +206,9 @@ input[type = "submit"]:hover
 	float: left;
 }
 
-.input[type= "text"]
+
+
+input[type= "text"]
 {
 	margin-left: 20px;
 	width: 1050px;
@@ -207,8 +216,10 @@ input[type = "submit"]:hover
 
 input[type = "textarea"]
 {
+	padding-top: 0px;
+	padding-left: 0px;
 	width: 1200px;
-	height: 100px;
+	height: 55px;
 }
 
 select
@@ -226,12 +237,13 @@ input,textarea,select
 	font-size: 18px;
 	border-radius: 5px;
 	border: 1px solid grey;
-	text-align: center;
 }
+
+
 
 textarea
 {
-	width: 325px;
+	width: 1000px;
 }
 
 .button

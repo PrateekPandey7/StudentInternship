@@ -20,7 +20,7 @@
 		<div class = "mainHeading">
 			<img src = "npc.jpg">
 			<p class = "heading1"><strong>National Productivity Council</strong><p>
-			<p class = "subh1">(Under Department of Industrial Policy & Promotion Ministry of Commerce & Industry, Govt. of India)</p>
+			<p class = "subh1">(Under Department of Industrial Policy & Promotion, Ministry of Commerce & Industry, Govt. of India)</p>
 			<strong><p class = "heading2">APPLICATION PROFORMA FOR STUDENTS INTERNSHIP PROGRAMME</p></strong>
 			</br>
       </br>
@@ -51,7 +51,7 @@
 								</tr>
 								<tr>
 									<th>Gender<span style="color:red">  *</span></th>
-									<td><select id = "gender"><option value = "Male">Male</option><option value = "Female">Female</option><option value = "Others">Others</option></select></td>
+									<td><select id = "gender" name = "gender"><option value = "Male">Male</option><option value = "Female">Female</option><option value = "Others">Others</option></select></td>
 								</tr>
 								<tr>
 									<th>Nationality<span style="color:red">  *</span></th>
@@ -75,7 +75,7 @@
 								</tr>
 								<tr>
 									<th>Contact Number</th>
-									<td><input name = "contact" maxlength="10" minlength="10"></input></td>
+									<td><input name = "contact"></input></td>
 								</tr>
 								<tr>
 									<th>Email<span style="color:red">  *</span></th>
@@ -281,8 +281,8 @@
 										</select></td>
 								</tr>
 								<tr>
-									<th>Choice No. 2<span style="color:red">  *</span></th>
-									<td><select id = "div2" name = "div2" required>
+									<th>Choice No. 2</th>
+									<td><select id = "div2" name = "div2">
 										<option disabled selected></option>
 										<option value = "Agribusiness Division">Agribusiness Division</option>
 										<option value = "Economics Services">Economics Services</option>
@@ -298,8 +298,8 @@
 										</select></td>
 								</tr>
 								<tr>
-									<th>Choice No. 3<span style="color:red">  *</span></th>
-									<td><select id = "div3" name = "div3" required>
+									<th>Choice No. 3</th>
+									<td><select id = "div3" name = "div3">
 										<option disabled selected></option>
 										<option value = "Agribusiness Division">Agribusiness Division</option>
 										<option value = "Economics Services">Economics Services</option>
@@ -346,8 +346,8 @@
 										</select></td>
 								</tr>
 								<tr>
-									<th>Choice No. 2<span style="color:red">  *</span></th>
-									<td><select id = "loc2" name = "loc2" required>
+									<th>Choice No. 2</th>
+									<td><select id = "loc2" name = "loc2">
 										<option disabled selected></option>
 										<option value = "Bengaluru">Bengaluru</option>
 										<option value = "Bhubaneswar">Bhubaneswar</option>
@@ -365,8 +365,8 @@
 										</select></td>
 								</tr>
 								<tr>
-									<th>Choice No. 3<span style="color:red">  *</span></th>
-									<td><select id = "loc3" name = "loc3" required>
+									<th>Choice No. 3</th>
+									<td><select id = "loc3" name = "loc3">
 										<option disabled selected></option>
 										<option value = "Bengaluru">Bengaluru</option>
 										<option value = "Bhubaneswar">Bhubaneswar</option>

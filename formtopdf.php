@@ -2,6 +2,15 @@
 require('fpdf/fpdf.php');
 class PDF extends FPDF
 {
+	function Footer()
+    {
+        // Go to 1.5 cm from bottom
+        $this->SetY(-15);
+        // Select Arial italic 8
+        $this->SetFont('Arial','I',10);
+        // Print centered page number
+        $this->Cell(0,10,'Page '.$this->PageNo(),0,0,'C');
+    }
 }
 
 $pdf = new PDF('P','mm',array(300,300));
@@ -37,6 +46,20 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$_POST['fname']);
 $pdf->Ln(10);
 
+//DOB
+$pdf->SetFont('Arial','B',14);
+$pdf->Cell(50,50,'Date of Birth :');
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(100,50,$_POST['dob']);
+$pdf->Ln(10);
+
+//Gender
+$pdf->SetFont('Arial','B',14);
+$pdf->Cell(50,50,'Gender :');
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(100,50,$_POST['gender']);
+$pdf->Ln(10);
+
 //Nationality
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,50,'Nationality :');
@@ -44,12 +67,7 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$_POST['nationality']);
 $pdf->Ln(10);
 
-//DOB
-$pdf->SetFont('Arial','B',14);
-$pdf->Cell(50,50,'Date of Birth :');
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$_POST['dob']);
-$pdf->Ln(10);
+
 
 //Address
 $pdf->SetFont('Arial','B',14);
