@@ -32,11 +32,11 @@
 				<br>
 				<p>Dear <?php echo $arr1[0] ?>,</p>
 				<p>Thank you for applying for <strong>"Students Internship Programme"</strong>. </p>
-				<p>Please, keep your provided contact number and Email Id active for further information. We will get back to you very soon.</p>
+				<p>Please, keep your provided contact number and Email ID active for further information. We will get back to you very soon.</p>
 				<div class="wrapper">
   					<span class="square individual">
-  					You can download your PDF form from the link  
-    				<a class = "link" href="<?php echo $_GET['name'];?>" target = '_blank'>Click Here</a> for your reference purpose.
+  					You can download your submitted Application Form from the link  
+    				<a class = "link" href="<?php echo $_GET['name'];?>" target = '_blank'>Click Here</a> for your reference purpose..
   					</span>
 				</div>
 				<br>

@@ -238,6 +238,7 @@ if(isset($_POST["submit"]))
   {
     $file_open = fopen("Internship.csv","a");
     $form_data = array(
+      'sno' => 'S.No.',
       'name' => 'Name',
       'fname' => 'Fathes Name',
       'dob' => 'DoB',
@@ -275,6 +276,7 @@ if(isset($_POST["submit"]))
 		$no_rows1 = count(file("Report.csv"));*/
     $no_rows = count(file("Internship.csv"));
 		$form_data = array(
+      'sno' => $no_rows,
 			'name' => $name,
 			'fname' => $fname,
 			'dob' => $dob,

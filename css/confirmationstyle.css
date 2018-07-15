@@ -10,6 +10,11 @@
 	color: #003466;
 }
 
+.s
+{
+	font-size: 30px;
+}
+
 .mainHeading1
 {
 	text-align: center;
@@ -95,7 +100,7 @@ a:link, a:visited, a:hover, a:active
     display: inline-block;
 }
 
-.download
+/*.download
 {
 	font-size: 24px;
 }
@@ -105,4 +110,4 @@ a:link, a:visited, a:hover, a:active
 	color: black;
 	background-color: #f44336;
 	padding: 5px;
-}
+}*/

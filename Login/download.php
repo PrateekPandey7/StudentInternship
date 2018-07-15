@@ -25,30 +25,30 @@
 		</div>
 
 		<br><br><br>
-		<center>
 		<div class = "information">
 			<div class = "value">
+				<p class = "s"><strong>How to generate Reports?</strong></p>
 				<div class="wrapper download">
   					<span class="square individual">
-  					To download the <strong>Summary Report</strong> of all Applications, please 
-    				<a class = "link" href="../Internship.csv" target = '_blank'>Click Here</a>
+  					1) To download the <strong>Summary Report</strong> of all Applications, please 
+    				<a class = "link" href="..Internship.csv" target = '_blank'>Click Here</a>
   					</span>
 				</div>
 				<div class="wrapper download">
   					<span class="square individual">
-  					To download filled <strong>Application Forms</strong> of all participants, please
+  					2) To download filled <strong>Application Forms</strong> of all participants, please
     				<a class = "link" href="../Application/zip_folders.php">Click Here</a>
   					</span>
 				</div>
 				<div class="wrapper download">
+					<p class = "s"><strong>How to end the session?</strong></p>
   					<span class="square individual">
-  					To Logout, please
+  					3) To Logout, please
     				<a class = "link" href="logout.php">Click Here</a>
   					</span>
 				</div>
 			</div>
 		</div>
-		</center>
 
 	</body>
 

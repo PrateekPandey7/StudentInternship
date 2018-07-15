@@ -266,7 +266,7 @@
 				        		<tr>
 									<th>Choice No. 1<span style="color:red">  *</span></th>
 									<td><select id = "div1" name = "div1" required>
-										<option disabled selected></option>
+										<option disabled selected>Select the division</option>
 										<option value = "Agribusiness Division">Agribusiness Division</option>
 										<option value = "Economics Services">Economics Services</option>
 										<option value = "Employee Development and Legal Cell">Employee Development & Legal Cell</option>
@@ -283,7 +283,7 @@
 								<tr>
 									<th>Choice No. 2</th>
 									<td><select id = "div2" name = "div2">
-										<option disabled selected></option>
+										<option disabled selected>Select the division</option>
 										<option value = "Agribusiness Division">Agribusiness Division</option>
 										<option value = "Economics Services">Economics Services</option>
 										<option value = "Employee Development and Legal Cell">Employee Development & Legal Cell</option>
@@ -300,7 +300,7 @@
 								<tr>
 									<th>Choice No. 3</th>
 									<td><select id = "div3" name = "div3">
-										<option disabled selected></option>
+										<option disabled selected>Select the division</option>
 										<option value = "Agribusiness Division">Agribusiness Division</option>
 										<option value = "Economics Services">Economics Services</option>
 										<option value = "Employee Development and Legal Cell">Employee Development & Legal Cell</option>
@@ -329,7 +329,7 @@
 				        		<tr>
 									<th>Choice No. 1<span style="color:red">  *</span></th>
 									<td><select id = "loc1" name = "loc1" required>
-										<option disabled selected></option>
+										<option disabled selected>Select the location</option>
 										<option value = "Bengaluru">Bengaluru</option>
 										<option value = "Bhubaneswar">Bhubaneswar</option>
 										<option value = "Chandigarh">Chandigarh</option>
@@ -348,7 +348,7 @@
 								<tr>
 									<th>Choice No. 2</th>
 									<td><select id = "loc2" name = "loc2">
-										<option disabled selected></option>
+										<option disabled selected>Select the location</option>
 										<option value = "Bengaluru">Bengaluru</option>
 										<option value = "Bhubaneswar">Bhubaneswar</option>
 										<option value = "Chandigarh">Chandigarh</option>
@@ -367,7 +367,7 @@
 								<tr>
 									<th>Choice No. 3</th>
 									<td><select id = "loc3" name = "loc3">
-										<option disabled selected></option>
+										<option disabled selected>Select the location</option>
 										<option value = "Bengaluru">Bengaluru</option>
 										<option value = "Bhubaneswar">Bhubaneswar</option>
 										<option value = "Chandigarh">Chandigarh</option>
@@ -461,18 +461,24 @@
 			document.getElementById("date").innerHTML = utc;
     		$("#tc").click(function()
 			{
-				var sd = document.getElementById("sdate").value;
-    			var ed = document.getElementById("edate").value;
-				if(new Date(sd).getTime() > new Date(ed).getTime())
-	        	{
-	        		alert('Starting date for internship cannot be after the End date');
-	        	}
-	        	else
-	        	{
-	        		$(".terms").show();
-	        		mygender( document.getElementById("gender").value);
-		   			$("#tc").hide();
-	        	}		
+				var l1 = document.getElementById("loc1").value;
+				var l2 = document.getElementById("loc2").value;
+				var l3 = document.getElementById("loc3").value;
+				var d1 = document.getElementById("div1").value;
+				var d2 = document.getElementById("div2").value;
+				var d3 = document.getElementById("div3").value;
+				if(((l1 == l2) && l1!='Select the location') || ((l1 == l3) && l1!='Select the location') || ((l3 == l2) && l2!='Select the location'))
+					alert("Cannot choose duplicate Locations");
+				if(((d1 == d2) && d1!='Select the location') || ((d1 == d3) && d1!='Select the location') || ((d3 == d2) && d2!='Select the location'))
+					alert("Cannot choose duplicate Division");
+				else
+				{
+					$(".terms").show();
+		        	mygender( document.getElementById("gender").value);
+			   		$("#tc").hide();	
+				}
+				
+	        			
 			});
     	});
 		$(document).ready(function()
@@ -496,8 +502,8 @@
 		    
 		      var key = e.keyCode;
 		      
-		      if (!((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
-		      
+		      if (!((key == 8) || (key == 9) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) 
+		      {
 		        e.preventDefault();
 		        
 		      }
@@ -521,7 +527,7 @@
 		    
 		      var key = e.keyCode;
 		      
-		      if (!((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+		      if (!((key == 8)  || (key == 9) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
 		      
 		        e.preventDefault();
 		        

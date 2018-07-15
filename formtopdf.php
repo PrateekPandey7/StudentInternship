@@ -548,7 +548,11 @@ $pdf->Ln(40);
 $pdf->Cell(100,10,'Terms and Conditions as specified in the Online Application Proforma/ related notification on NPC website');
 $pdf->Ln(15);
 $pdf->SetFont('Arial','',12);
-$pdf->MultiCell(270,7,"I hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.",0,'L',false);
+if($_POST["gender"] == "Male")
+	$string = "I " . $_POST["name"] . " son of " . $_POST["fname"] . " hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.";
+else if($_POST["gender"] == "Female")
+	$string = "I " . $_POST["name"] . " daughter of " . $_POST["fname"] . " hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.";
+$pdf->MultiCell(270,7,$string,0,'L',false);
 //Place
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,10,'Place :');
