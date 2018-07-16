@@ -50,8 +50,9 @@ else
     } 
     else 
     {
-        echo "<script type='text/javascript'>alert('Sorry, there was error in uploading');</script>";
+        //echo "<script type='text/javascript'>alert('Sorry, there was error in uploading');</script>";
         //$error .= "Some Error";
+        echo "There was some error uploading";
     }
 }
 ?>

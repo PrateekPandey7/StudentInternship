@@ -47,7 +47,7 @@
 								</tr>
 								<tr>
 									<th>Date of Birth<span style="color:red">  *</span></th>
-									<td><input type = "date" name = "dob" required></input></td>
+									<td><input id = "datePickerId" type = "date" name = "dob" required></input></td>
 								</tr>
 								<tr>
 									<th>Gender<span style="color:red">  *</span></th>
@@ -177,40 +177,40 @@
 			                    <td><input name = "pet11" size = "4"></input></td>
 			                    <td><input name = "pet12" size = "24"></input></td>
 			                    <td><input name = "pet13" size = "24"></input></td>
-			                    <td><input type = "date" name = "pet14" size = "20"></input></td>
-			                    <td><input type = "date" name = "pet15" size = "20"></input></td>
+			                    <td><input id = "datePickerId1" type = "date" name = "pet14" size = "20"></input></td>
+			                    <td><input id = "datePickerId11" type = "date" name = "pet15" size = "20"></input></td>
 			                    <td><input name = "pet16" size = "24"></input></td>
 			                  <tr>
 			                  <tr id = "pet2" name = "pet2">
 			                    <td><input name = "pet21" size = "4"></input></td>
 			                    <td><input name = "pet22" size = "24"></input></td>
 			                    <td><input name = "pet23" size = "24"></input></td>
-			                    <td><input type = "date" name = "pet24" size = "20"></input></td>
-			                    <td><input type = "date" name = "pet25" size = "20"></input></td>
+			                    <td><input id = "datePickerId2" type = "date" name = "pet24" size = "20"></input></td>
+			                    <td><input id = "datePickerId21" type = "date" name = "pet25" size = "20"></input></td>
 			                    <td><input name = "pet26" size = "24"></input></td>
 			                   <tr>
 			                  <tr id = "pet3" name = "pet3">
 			                    <td><input name = "pet31" size = "4"></input></td>
 			                    <td><input name = "pet32" size = "24"></input></td>
 			                    <td><input name = "pet33" size = "24"></input></td>
-			                    <td><input type = "date" name = "pet34" size = "20"></input></td>
-			                    <td><input type = "date" name = "pet35" size = "20"></input></td>
+			                    <td><input id = "datePickerId3" type = "date" name = "pet34" size = "20"></input></td>
+			                    <td><input id = "datePickerId31" type = "date" name = "pet35" size = "20"></input></td>
 			                    <td><input name = "pet36" size = "24"></input></td>
 			                  <tr>
 			                  <tr id = "pet4" name = "pet4">
 			                    <td><input name = "pet41" size = "4"></input></td>
 			                    <td><input name = "pet42" size = "24"></input></td>
 			                    <td><input name = "pet43" size = "24"></input></td>
-			                    <td><input type = "date" name = "pet44" size = "20"></input></td>
-			                    <td><input type = "date" name = "pet45" size = "20"></input></td>
+			                    <td><input id = "datePickerId4" type = "date" name = "pet44" size = "20"></input></td>
+			                    <td><input id = "datePickerId41" type = "date" name = "pet45" size = "20"></input></td>
 			                    <td><input name = "pet46" size = "24"></input></td>
 			                  <tr>
 			                  <tr id = "pet5" name = "pet5">
 			                    <td><input name = "pet51" size = "4"></input></td>
 			                    <td><input name = "pet52" size = "24"></input></td>
 			                    <td><input name = "pet53" size = "24"></input></td>
-			                    <td><input type = "date" name = "pet54" size = "20"></input></td>
-			                    <td><input type = "date" name = "pet55" size = "20"></input></td>
+			                    <td><input id = "datePickerId5" type = "date" name = "pet54" size = "20"></input></td>
+			                    <td><input id = "datePickerId51" type = "date" name = "pet55" size = "20"></input></td>
 			                    <td><input name = "pet56" size = "24"></input></td>
 			                  <tr>
 			                </tbody>
@@ -455,6 +455,19 @@
     </script>
 	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
+
+		datePickerId.max = new Date().toISOString().split("T")[0];
+		datePickerId1.max = new Date().toISOString().split("T")[0];
+		datePickerId2.max = new Date().toISOString().split("T")[0];
+		datePickerId3.max = new Date().toISOString().split("T")[0];
+		datePickerId4.max = new Date().toISOString().split("T")[0];
+		datePickerId5.max = new Date().toISOString().split("T")[0];
+		datePickerId11.max = new Date().toISOString().split("T")[0];
+		datePickerId21.max = new Date().toISOString().split("T")[0];
+		datePickerId31.max = new Date().toISOString().split("T")[0];
+		datePickerId41.max = new Date().toISOString().split("T")[0];
+		datePickerId51.max = new Date().toISOString().split("T")[0];
+
 		$(document).ready(function()
 		{
 			var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
@@ -467,9 +480,9 @@
 				var d1 = document.getElementById("div1").value;
 				var d2 = document.getElementById("div2").value;
 				var d3 = document.getElementById("div3").value;
-				if(((l1 == l2) && l1!='Select the location') || ((l1 == l3) && l1!='Select the location') || ((l3 == l2) && l2!='Select the location'))
+				if(((l1 == l2) && l1!='Select the location') || ((l1 == l3) && l1!='Select the location') || ((l2 == l3) && l2!='Select the location'))
 					alert("Cannot choose duplicate Locations");
-				if(((d1 == d2) && d1!='Select the location') || ((d1 == d3) && d1!='Select the location') || ((d3 == d2) && d2!='Select the location'))
+				else if(((d1 == d2) && d1!='Select the division') || ((d1 == d3) && d1!='Select the division') || ((d3 == d2) && d2!='Select the division'))
 					alert("Cannot choose duplicate Division");
 				else
 				{
@@ -502,8 +515,8 @@
 		    
 		      var key = e.keyCode;
 		      
-		      if (!((key == 8) || (key == 9) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) 
-		      {
+		      if (!((key == 8) || (key == 9) || (key == 190) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+		      
 		        e.preventDefault();
 		        
 		      }
@@ -527,7 +540,7 @@
 		    
 		      var key = e.keyCode;
 		      
-		      if (!((key == 8)  || (key == 9) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+		      if (!((key == 8) || (key == 9) || (key == 190) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
 		      
 		        e.preventDefault();
 		        

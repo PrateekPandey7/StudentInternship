@@ -31,12 +31,12 @@
 				<div class="wrapper download">
   					<span class="square individual">
   					1) To download the <strong>Summary Report</strong> of all Applications, please 
-    				<a class = "link" href="..Internship.csv" target = '_blank'>Click Here</a>
+    				<a class = "link" href="./Internship.csv" target = '_blank'>Click Here</a>
   					</span>
 				</div>
 				<div class="wrapper download">
   					<span class="square individual">
-  					2) To download filled <strong>Application Forms</strong> of all participants, please
+  					2) To download filled <strong>Application Forms</strong> of all Applicants, please
     				<a class = "link" href="../Application/zip_folders.php">Click Here</a>
   					</span>
 				</div>
