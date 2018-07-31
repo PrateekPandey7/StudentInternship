@@ -109,7 +109,7 @@
 			                  <th>Qualification</th>
 			                  <th width = "4">Year</th>
 			                  <th>Institution</th>
-			                  <th>Marks Obtained(in Percentage)</th>
+			                  <th>Marks Obtained(in % / CGPA)</th>
 			                  <th>Remarks</th>
 			                </thead>
 			                <tbody>
@@ -128,14 +128,14 @@
 			                    <td><input name = "et25" size = "17"></input></td>
 			                   <tr>
 			                  <tr id = "et3" name = "et3">
-			                    <td><input name = "et31" placeholder = "First Degree*" required></input></td>
+			                    <td><input name = "et31" placeholder = "Under Graduation*" required></input></td>
 			                    <td><input name = "et32" size = "8" required></input></td>
 			                    <td><input name = "et33" size = "36" required></input></td>
 			                    <td><input name = "et34" size = "27" required></input></td>
 			                    <td><input name = "et35" size = "17"></input></td>
 			                  <tr>
 			                  <tr id = "et4" name = "et4">
-			                    <td><input name = "et41"  placeholder = "Other Degree"</input></td>
+			                    <td><input name = "et41"  placeholder = "Post Graduation"</input></td>
 			                    <td><input name = "et42" size = "8"></input></td>
 			                    <td><input name = "et43" size = "36"></input></td>
 			                    <td><input name = "et44" size = "27" ></input></td>
@@ -150,6 +150,7 @@
 			                  <tr>
 			                </tbody>
 			            </table>
+			            <span style="color:red">  *</span> If you want to add more information you may add in the same order in "Any Other Information" field below
 			        </div>
 		        </fieldset>
 
@@ -162,7 +163,7 @@
 
 		        <fieldset>
 			        <div class = "previous">
-	          			<div class = "h"><label><h3>PREVIOUS EXPERIENCE</h3></label></div>
+	          			<div class = "h"><label><h3>WORK EXPERIENCE</h3></label></div>
 	          			<table id = "previousexperience">
 	          				<thead>
 			                  <th width = "4">S.No.</th>
@@ -215,6 +216,7 @@
 			                  <tr>
 			                </tbody>
 			            </table>
+			            <span style="color:red">  *</span> If you want to add more information you may add in the same order in "Any Other Information" field below
 			        </div>
 		        </fieldset>
 		        
@@ -227,7 +229,7 @@
 			                  <th>Name of Research Article/Paper</th>
 			                  <th>Details of Publication</th>
 			                  <th>ISSN No./UGC No.</th>
-			                  <th>Impact Factor</th>
+			                  <th>Impact Factor of Publications</th>
 			                </thead>
 			                <tbody>
 			                  <tr id = "pt1" name = "pt1">
@@ -253,65 +255,69 @@
 			                  <tr>
 			                </tbody>
 			            </table>
+			            <span style="color:red">  *</span> If you want to add more information you may add in the same order in "Any Other Information" field below
 			        </div>
 		        </fieldset>
 
 		        
 		        <fieldset>
 			        <div class = "divison">
-			        	<div class = "h"><label><h3>ANY OTHER INFORMATION (Give Details) </h3></label></div><input type = "textarea" id = "skill" name = "details"></input>
-			        	<div class = "hh"><label><h3>SELECT THE DIVISON INTERESTED TO WORK WITH <span style="color:red">  *</span><br>(Choose any three divisions in order of preference):</h3></label></div>
+			        	<div class = "h"><label><h3>ANY OTHER INFORMATION WITH RESPECT TO WORK EXPERIENCE AND PUBLICATIONS </h3></label></div><input type = "textarea" id = "skill" name = "details"></input>
+			        	<div class = "hh"><label><h3>SELECT THE DISCIPLINE INTERESTED TO WORK IN <span style="color:red">  *</span><br>(Choose any three in order of preference):</h3></label></div>
 			        	<div class = "divisiondetails">
 				        	<table class = "personaldetails">
 				        		<tr>
 									<th>Choice No. 1<span style="color:red">  *</span></th>
 									<td><select id = "div1" name = "div1" required>
-										<option disabled selected>Select the division</option>
-										<option value = "Agribusiness Division">Agribusiness Division</option>
+										<option disabled selected>Select the discipline</option>
+										<option value = "Agri-Business Services">Agri-Business Services</option>
 										<option value = "Economics Services">Economics Services</option>
-										<option value = "Employee Development and Legal Cell">Employee Development & Legal Cell</option>
 										<option value = "Energy Management">Energy Management</option>
 										<option value = "Environment Management">Environment Management</option>
-										<option value = "Finance Management">Finance Management</option>
+										<option value = "Finance">Finance</option>
+										<option value = "HR, Employee Development and Legal">HR, Employee Development & Legal</option>
 										<option value = "Human Resource Management">Human Resource Management</option>
 										<option value = "Industrial Engineering">Industrial Engineering</option>
 										<option value = "Information Technology">Information Technology</option>
 										<option value = "Productivity Awareness">Productivity Awareness</option>
 										<option value = "Technology Management">Technology Management</option>
+										<option value = "Training Services">Training Services</option>
 										</select></td>
 								</tr>
 								<tr>
 									<th>Choice No. 2</th>
 									<td><select id = "div2" name = "div2">
-										<option disabled selected>Select the division</option>
-										<option value = "Agribusiness Division">Agribusiness Division</option>
+										<option disabled selected>Select the discipline</option>
+										<option value = "Agri-Business Services">Agri-Business Services</option>
 										<option value = "Economics Services">Economics Services</option>
-										<option value = "Employee Development and Legal Cell">Employee Development & Legal Cell</option>
 										<option value = "Energy Management">Energy Management</option>
 										<option value = "Environment Management">Environment Management</option>
-										<option value = "Finance Management">Finance Management</option>
+										<option value = "Finance">Finance</option>
+										<option value = "HR, Employee Development and Legal">HR, Employee Development & Legal</option>
 										<option value = "Human Resource Management">Human Resource Management</option>
 										<option value = "Industrial Engineering">Industrial Engineering</option>
 										<option value = "Information Technology">Information Technology</option>
 										<option value = "Productivity Awareness">Productivity Awareness</option>
 										<option value = "Technology Management">Technology Management</option>
+										<option value = "Training Services">Training Services</option>
 										</select></td>
 								</tr>
 								<tr>
 									<th>Choice No. 3</th>
 									<td><select id = "div3" name = "div3">
-										<option disabled selected>Select the division</option>
-										<option value = "Agribusiness Division">Agribusiness Division</option>
+										<option disabled selected>Select the discipline</option>
+										<option value = "Agri-Business Services">Agri-Business Services</option>
 										<option value = "Economics Services">Economics Services</option>
-										<option value = "Employee Development and Legal Cell">Employee Development & Legal Cell</option>
 										<option value = "Energy Management">Energy Management</option>
 										<option value = "Environment Management">Environment Management</option>
-										<option value = "Finance Management">Finance Management</option>
+										<option value = "Finance">Finance</option>
+										<option value = "HR, Employee Development and Legal">HR, Employee Development & Legal</option>
 										<option value = "Human Resource Management">Human Resource Management</option>
 										<option value = "Industrial Engineering">Industrial Engineering</option>
 										<option value = "Information Technology">Information Technology</option>
 										<option value = "Productivity Awareness">Productivity Awareness</option>
 										<option value = "Technology Management">Technology Management</option>
+										<option value = "Training Services">Training Services</option>
 										</select></td>
 								</tr>
 				      		</table>
@@ -321,7 +327,7 @@
 			        	<div>
 			        	</br></br>
 			        	</div>
-			        	<div class = "hh"><label><h3>SELECT THE LOCATION INTERESTED TO WORK AT <span style="color:red">  *</span><br>(Choose any three divisions in order of preference. Please note, by the same preference you shall be called for interview/selection):</h3>
+			        	<div class = "hh"><label><h3>SELECT THE LOCATION INTERESTED TO WORK AT <span style="color:red">  *</span><br>(Choose any three in order of preference. Please note, your interview/selection would be conducted as per your indicated preference):</h3>
 			        	</label>
 			     		</div>
 			        	<div class = "locationdetails">
@@ -329,7 +335,7 @@
 				        		<tr>
 									<th>Choice No. 1<span style="color:red">  *</span></th>
 									<td><select id = "loc1" name = "loc1" required>
-										<option disabled selected>Select the location</option>
+										<option disabled selected value = "">Select the location</option>
 										<option value = "Bengaluru">Bengaluru</option>
 										<option value = "Bhubaneswar">Bhubaneswar</option>
 										<option value = "Chandigarh">Chandigarh</option>
@@ -482,8 +488,8 @@
 				var d3 = document.getElementById("div3").value;
 				if(((l1 == l2) && l1!='Select the location') || ((l1 == l3) && l1!='Select the location') || ((l2 == l3) && l2!='Select the location'))
 					alert("Cannot choose duplicate Locations");
-				else if(((d1 == d2) && d1!='Select the division') || ((d1 == d3) && d1!='Select the division') || ((d3 == d2) && d2!='Select the division'))
-					alert("Cannot choose duplicate Division");
+				else if(((d1 == d2) && d1!='Select the discipline') || ((d1 == d3) && d1!='Select the discipline') || ((d3 == d2) && d2!='Select the discipline'))
+					alert("Cannot choose duplicate Discipline");
 				else
 				{
 					$(".terms").show();

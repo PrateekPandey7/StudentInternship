@@ -277,7 +277,7 @@ if(isset($_POST["submit"]))
     $no_rows = count(file("Internship.csv"));
     if($no_rows > 1)
     {
-      $no_rows = $no_rows - (int)($no_rows/2);
+      $no_rows = $no_rows;
     }
 		$form_data = array(
       'sno' => $no_rows,
